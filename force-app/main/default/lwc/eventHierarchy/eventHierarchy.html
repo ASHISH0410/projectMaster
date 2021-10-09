@@ -1,0 +1,7 @@
+<template>
+    <lightning-card  title="GrandParent" icon-name="standard:account">
+        <p class="slds-m-around_medium">{selectedItems} of {totalItems} Children selected</p>
+        <lightning-button label="Reset All" slot="actions" onclick={resetdata}></lightning-button>
+    <c-event-parent-hierarchy oncallfromparent={processdata}></c-event-parent-hierarchy>
+    </lightning-card>
+</template>

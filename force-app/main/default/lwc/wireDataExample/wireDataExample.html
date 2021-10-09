@@ -1,0 +1,15 @@
+<template>
+    <div class="slds-m-around_small">
+    <lightning-input  class="slds-m-around_medium" label="Enter Case Subject" type="search" value={subject} onchange={searchCase}></lightning-input>
+    <div style="height: 300px;" class="slds-m-around_medium">
+        <lightning-datatable
+                key-field="id"
+                data={cases}
+                columns={columns}>
+        </lightning-datatable>
+    </div>    
+    <template if:true={error}>
+        {error}
+    </template>
+</div>
+</template>
