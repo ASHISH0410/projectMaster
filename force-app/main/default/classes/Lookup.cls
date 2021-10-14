@@ -23,6 +23,6 @@ public with sharing class Lookup {
 
     private static void checkChanges()
     {
-        System.debug('Checking new changes here');
+        System.debug('Checking new changes here!');
     }
 }
