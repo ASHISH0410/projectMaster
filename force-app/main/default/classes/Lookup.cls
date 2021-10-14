@@ -1,4 +1,4 @@
-public without sharing class Lookup {
+public with sharing class Lookup {
 
     @AuraEnabled(cacheable=true)
     public static List<sObject> search(String searchTerm, string myObject, String filter) {
@@ -19,5 +19,10 @@ public without sharing class Lookup {
         }
         List<sObject> lookUpList = database.query(myQuery);
         return lookUpList;
+    }
+
+    private static void checkChanges()
+    {
+        System.debug('Checking new changes here');
     }
 }
