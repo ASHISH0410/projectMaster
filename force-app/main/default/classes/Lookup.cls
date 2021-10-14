@@ -4,7 +4,7 @@ public without sharing class Lookup {
     public static List<sObject> search(String searchTerm, string myObject, String filter) {
         String myQuery = null;
         //This is my new feature
-        //This is my new feature1
+        //This is my brand new feature1
         if(filter != null && filter != ''){
             myQuery = 'Select Id, Name from '+myObject+' Where Name Like  \'%' + searchTerm + '%\' AND '+filter+' LIMIT  5';
         }
