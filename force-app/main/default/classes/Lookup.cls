@@ -5,6 +5,7 @@ public without sharing class Lookup {
         String myQuery = null;
         //This is my new feature
         //This is my brand new feature1
+        //This is new comment
         if(filter != null && filter != ''){
             myQuery = 'Select Id, Name from '+myObject+' Where Name Like  \'%' + searchTerm + '%\' AND '+filter+' LIMIT  5';
         }
