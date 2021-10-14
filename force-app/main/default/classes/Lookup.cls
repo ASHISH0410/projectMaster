@@ -20,4 +20,9 @@ public with sharing class Lookup {
         List<sObject> lookUpList = database.query(myQuery);
         return lookUpList;
     }
+
+    private static void checkChanges()
+    {
+        System.debug('Checking new changes here');
+    }
 }
