@@ -1,4 +1,4 @@
-public without sharing class Lookup {
+public with sharing class Lookup {
 
     @AuraEnabled(cacheable=true)
     public static List<sObject> search(String searchTerm, string myObject, String filter) {
