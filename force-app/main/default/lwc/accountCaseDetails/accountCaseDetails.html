@@ -1,0 +1,7 @@
+<template>
+    <lightning-card  variant="Narrow"  title={recordId} icon-name="standard:account">
+        <lightning-button-icon  icon-name="utility:down" variant="border-filled" alternative-text="Show More" slot="actions"></lightning-button-icon>
+        <p class="slds-p-horizontal_small">{name}'s Related Cases</p>
+        <c-case-details case-data={cases}></c-case-details>
+    </lightning-card>
+</template>
